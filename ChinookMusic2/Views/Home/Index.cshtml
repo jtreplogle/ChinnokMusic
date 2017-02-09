@@ -1,0 +1,15 @@
+﻿@using ChinookMusic2.Models
+@model List<Customer>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of Customers</h2>
+<ul>
+    @foreach (var cust in Model)
+    {
+        <li>@cust.FirstName &nbsp;&nbsp; @cust.LastName</li>
+    }
+         <img src="https://marketculture.files.wordpress.com/2012/09/istock_customer-metrics.jpg" alt="Customer Image" height="450" width="450">
+</ul>
+

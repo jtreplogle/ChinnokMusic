@@ -1,0 +1,14 @@
+﻿@using ChinookMusic2.ViewModels
+@model List<CanadianCustomerViewModel>
+@{
+    ViewBag.Title = "CanadianCustomers";
+}
+
+<h2>CanadianCustomers</h2>
+<ul>
+    @foreach (var cust in Model)
+    {
+        <li>@cust.FirstName &nbsp;&nbsp; @cust.LastName</li>
+    }
+</ul>
+<img src="http://blogs.perficient.com/lifesciences/files/2014/11/vanessas-law-canada.jpg" alt="Canadian Flag" style="width:304px;height:228px;">
